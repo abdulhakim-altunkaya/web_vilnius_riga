@@ -8,5 +8,17 @@
         "69:DF:C8:31:AA:11:DD:B6:1F:08:EF:A6:DE:3E:E1:1B:54:8A:B3:77:9D:F5:77:71:61:83:F3:89:5F:CF:21:2E"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sudokutown.app",
+      "sha256_cert_fingerprints": [
+        "FF:5F:20:F3:5F:45:59:9F:5E:64:3A:0F:8E:C3:37:DA:64:F1:B4:7F:17:B1:AC:B0:76:4A:B2:0E:13:34:FE:82",
+        "C0:77:01:F5:94:B6:D9:12:44:2B:BC:DB:54:D5:CF:A2:96:FC:D3:D9:46:84:AA:78:7A:B5:BC:5F:77:80:8C:F2",
+        "C7:92:0F:22:07:92:06:FE:EE:37:AE:81:60:F3:25:3E:95:2B:40:61:4D:97:EC:9A:BE:23:D5:58:C3:02:2A:9E"
+      ]
+    }
   }
 ]

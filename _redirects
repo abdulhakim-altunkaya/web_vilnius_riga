@@ -5,3 +5,5 @@
 /langas/contact/        /contact/               301
 # Old Langas privacy link
 /langas-privacy.html    /langas/privacy/        301
+# Sudoku Town Beat me links: /sudoku-town/c/CODE shows the challenge page (the URL stays the same)
+/sudoku-town/c/*        /sudoku-town/c/index.html  200

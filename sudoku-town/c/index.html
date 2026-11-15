@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beat me! · Sudoku Town</title>
+<meta name="description" content="A friend challenged you in Sudoku Town. Solve the same puzzle faster.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBFAF6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vilnius Riga Apps">
+<meta property="og:title" content="Beat me! · Sudoku Town">
+<meta property="og:description" content="A friend challenged you. Can you solve the same sudoku faster?">
+<meta property="og:image" content="https://vilnius-riga.app/assets/img/og.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/Baloo2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/home.css">
+<style>
+  .challenge-open { display: inline-block; margin-top: 18px; text-decoration: none; }
+  .challenge-open[hidden] { display: none; }
+  .challenge-note { font-size: 14px; color: var(--soft); margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/"><svg width="64" height="24" viewBox="0 0 64 24" aria-hidden="true"><line x1="11" y1="12" x2="53" y2="12" stroke="#000" stroke-width="4"/><circle cx="11" cy="12" r="9" fill="#9E2B36" stroke="#000" stroke-width="3.5"/><circle cx="53" cy="12" r="9" fill="#F5D042" stroke="#000" stroke-width="3.5"/></svg><span>Vilnius Riga</span></a>
+  <nav aria-label="Main"><a href="/#apps">Apps</a><a href="/contact/">Contact</a></nav>
+</header>
+<main>
+<section class="app-hero">
+  <img src="/assets/img/sudoku-town.png" alt="Sudoku Town logo" width="120" height="120">
+  <div>
+    <h1>Beat me!</h1>
+    <p>A friend challenged you in Sudoku Town. Solve the same puzzle faster.</p>
+    <a class="btn challenge-open" id="challenge-open" href="#" hidden>Open in Sudoku Town</a>
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.sudokutown.app" rel="noopener" aria-label="Sudoku Town on Google Play"><img src="/assets/img/google-play.svg" alt="" width="19" height="21"></a>
+      <button class="store" type="button" data-ios-soon="Sudoku Town" aria-label="Sudoku Town on the App Store"><img src="/assets/img/apple.svg" alt="" width="19" height="21"></button>
+    </div>
+    <p class="challenge-note">Just installed? Come back and tap the link again.</p>
+  </div>
+</section>
+</main>
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+<footer class="foot">
+  <span>© <span data-year>2026</span> Vilnius Riga Apps</span>
+  <nav aria-label="Footer"><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></nav>
+</footer>
+</div>
+<script>
+  // Android with Sudoku Town installed: open the challenge in the app; without it, Google Play.
+  (function () {
+    var m = location.pathname.match(/^\/sudoku-town\/c\/([A-Za-z0-9]{8})\/?$/);
+    var btn = document.getElementById("challenge-open");
+    if (!m || !btn || !/Android/i.test(navigator.userAgent)) return;
+    var play = "https://play.google.com/store/apps/details?id=com.sudokutown.app";
+    btn.href = "intent://vilnius-riga.app/sudoku-town/c/" + m[1] +
+      "#Intent;scheme=https;package=com.sudokutown.app;S.browser_fallback_url=" + encodeURIComponent(play) + ";end";
+    btn.hidden = false;
+  })();
+</script>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
