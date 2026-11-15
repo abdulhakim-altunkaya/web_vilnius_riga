@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /langas/u/
+
+Sitemap: https://vilnius-riga.app/sitemap.xml

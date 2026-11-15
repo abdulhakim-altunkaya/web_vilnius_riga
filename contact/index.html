@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Vilnius Riga Apps</title>
+<meta name="description" content="Questions about Langas or Sudoku Town? Send us a message.">
+<link rel="canonical" href="https://vilnius-riga.app/contact/">
+<meta name="theme-color" content="#FBFAF6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vilnius Riga Apps">
+<meta property="og:title" content="Contact · Vilnius Riga Apps">
+<meta property="og:description" content="Questions about Langas or Sudoku Town? Send us a message.">
+<meta property="og:image" content="https://vilnius-riga.app/assets/img/og.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/Baloo2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/home.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/"><svg width="64" height="24" viewBox="0 0 64 24" aria-hidden="true"><line x1="11" y1="12" x2="53" y2="12" stroke="#000" stroke-width="4"/><circle cx="11" cy="12" r="9" fill="#9E2B36" stroke="#000" stroke-width="3.5"/><circle cx="53" cy="12" r="9" fill="#F5D042" stroke="#000" stroke-width="3.5"/></svg><span>Vilnius Riga</span></a>
+  <nav aria-label="Main"><a href="/#apps">Apps</a><a href="/contact/">Contact</a></nav>
+</header>
+<main>
+<section class="page">
+  <h1>Contact us</h1>
+  <p>Questions, ideas, a mistake you found or a problem with a purchase? Send us a message and we'll reply by email.</p>
+  <form class="form" id="contact-form" novalidate>
+    <label>App
+      <select name="app">
+        <option value="Langas">Langas</option>
+        <option value="Sudoku Town">Sudoku Town</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+    <label>Your name<input name="name" type="text" maxlength="80" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" maxlength="160" autocomplete="email" required></label>
+    <label>Topic
+      <select name="topic">
+        <option value="general">General question</option>
+        <option value="lesson">Mistake in a lesson or puzzle</option>
+        <option value="purchase">Purchase or refund</option>
+        <option value="account">My account</option>
+        <option value="idea">Idea or feedback</option>
+      </select>
+    </label>
+    <label>Message<textarea id="contact-message" name="message" maxlength="1980" required></textarea><span class="count" data-count-for="contact-message"></span></label>
+    <div class="hp" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <div><button class="btn" type="submit">Send message</button></div>
+    <p class="form-status" role="status"></p>
+  </form>
+  <p>Prefer email? Write to <a href="mailto:drysoftware1@gmail.com">drysoftware1@gmail.com</a>.</p>
+</section>
+</main>
+<footer class="foot">
+  <span>© <span data-year>2026</span> Vilnius Riga Apps</span>
+  <nav aria-label="Footer"><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></nav>
+</footer>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

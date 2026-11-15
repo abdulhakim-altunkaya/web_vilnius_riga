@@ -1,0 +1,7 @@
+# Langas invite links: /langas/u/123 shows the invite page (the URL stays the same)
+/langas/u/*             /langas/u.html          200
+# Langas contact moved to the shared contact page
+/langas/contact         /contact/               301
+/langas/contact/        /contact/               301
+# Old Langas privacy link
+/langas-privacy.html    /langas/privacy/        301
